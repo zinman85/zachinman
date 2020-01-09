@@ -1,0 +1,96 @@
+[
+    {
+        "position": "IT Professional II",
+        "employer": "Nevada Department of Motor Vehicles",
+        "years": "February 2019 - Present",
+        "location": "Reno, NV",
+        "description": [
+            "Design, develop, and maintain applications.",
+            "Provide application support and resolve issues promptly.",
+            "Document and report on all tasks performed."
+        ]
+    },
+    {
+        "position": "IT Professional I",
+        "employer": "Nevada Department of Motor Vehicles",
+        "years": "February 2018 - February 2019",
+        "location": "Reno, NV",
+        "description": [
+            "Design, develop, and maintain applications.",
+            "Provide application support and resolve issues promptly.",
+            "Document and report on all tasks performed."
+        ]
+    },
+    {
+        "position": "IT Professional Trainee",
+        "employer": "Nevada Department of Motor Vehicles",
+        "years": "February 2017 - February 2018",
+        "location": "Reno, NV",
+        "description": [
+            "Design, develop, and maintain applications.",
+            "Provide application support and resolve issues promptly.",
+            "Document and report on all tasks performed."
+        ]
+    },
+    {
+        "position": "Composite Technician",
+        "employer": "LamTex Composites",
+        "years": "June 2015 - Present",
+        "location": "Reno, NV",
+        "description": [
+            "Manufacture and assemble parts for a variety of aircrafts.",
+            "Update inventory of shelf life items. Maintain the organization and cleanliness of the work environment."
+        ]
+    },
+    {
+        "position": "Front Desk",
+        "employer": "Sports West",
+        "years": "March 2015 - June 2015",
+        "location": "Reno, NV",
+        "description": [
+            "Check in members and answer phones.",
+            "Display quality customer service while handling any questions or problems that may arise.",
+            "Process transactions through POS system."
+        ]
+    },
+    {
+        "position": "Hot Shot Driver/Merchandiser",
+        "employer": "New West",
+        "years": "February 2014 - September 2014",
+        "location": "Reno, NV",
+        "description": [
+            "Deliver and stock merchandise in a timely manner.",
+            "Process any required monetary transactions.",
+            "Assist other departments needed."
+        ]
+    },
+    {
+        "position": "Direct Service Trainer",
+        "employer": "Disability Resources",
+        "years": "November 2012 - February 2016",
+        "location": "Reno, NV",
+        "description": ["Assist disabled teens and adults with daily life skills to foster independence."]
+    },
+    {
+        "position": "Receiver",
+        "employer": "Long Beach Viking Bookstore",
+        "years": "November 2009 - August 2012",
+        "location": "Long Beach, CA",
+        "description": [
+            "Log incoming and outgoing shipments using UPS WorldShip.",
+            "Deliver and picked up supplies from various campuses and businesses.",
+            "Complete general housekeeping tasks to ensure a clean, safe work environment.",
+            "Unload trucks and moved pallets using a stand up forklift."
+        ]
+    },
+    {
+        "position": "Tutor",
+        "employer": "Compton Unified School District",
+        "years": "November 2008 - June 2009,",
+        "location": "Compton, CA",
+        "description": [
+            "Tutored and assisted college-bound middle school students in grades 6-8 with their academics.",
+            "Areas of focus were literacy, mathematics, and technology."
+        ]
+    }
+]

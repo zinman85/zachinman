@@ -1,0 +1,17 @@
+[
+    {
+        "name": "University of Nevada, Reno",
+        "location": "Reno, NV",
+        "degree": "Bachelor of Science",
+        "major": "Applied Mathematics",
+        "minor": "Computer Science & Engineering",
+        "graduation": "May 2016"
+    },
+    {
+        "name": "Long Beach City College",
+        "location": "Long Beach, CA",
+        "degree": "Associates",
+        "major": "Liberal Arts",
+        "graduation": "May 2012"
+    }
+]
