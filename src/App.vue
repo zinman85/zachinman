@@ -1,88 +1,60 @@
 <template>
     <v-app>
-        <v-app-bar app dark>
-            <v-toolbar-title>Vuetify Dashboard</v-toolbar-title>
-            <v-spacer></v-spacer>
-            <v-btn
-                v-for="link in links"
-                :key="`${link.label}-header-link`"
-                text
-                rounded
-                class="my-2"
-                @click="$vuetify.goTo(link.url)"
-            >{{ link.label }}</v-btn>
-        </v-app-bar>
+        <NavBar />
         <v-content>
-            <!-- Content Here -->
-            <About id="about" :class="compoenetStyle" />
-            <Experience id="experience" style="min-height: 600px;" />
-            <Portfolio id="portfolio" style="height: 600px;" />
-            <Contact id="contact" style="height: 600px;" />
+            <v-container>
+                <Header id="header" :style="{'min-height': `${window.height}px`}" />
+                <About id="about" :style="{'min-height': `${window.height}px`}" />
+                <Experience id="experience" :style="{'min-height': `${window.height}px`}" />
+                <Portfolio id="portfolio" :style="{'min-height': `${window.height}px`}" />
+                <Contact id="contact" :style="{'min-height': `${window.height}px`}" />
+            </v-container>
         </v-content>
     </v-app>
 </template>
 
 <script>
-import About from "./components/About.vue";
-import Experience from "./components/Experience.vue";
-import Portfolio from "./components/Portfolio.vue";
-import Contact from "./components/Contact.vue";
+import About from "./views/About";
+import Contact from "./views/Contact";
+import Experience from "./views/Experience";
+import Header from "./views/Header";
+import NavBar from "./components/NavBar";
+import Portfolio from "./views/Portfolio";
 
 export default {
     name: "App",
-
     components: {
         About,
+        Contact,
         Experience,
-        Portfolio,
-        Contact
+        Header,
+        NavBar,
+        Portfolio
     },
-
     data: () => ({
-        compoenetStyle: {
-            "min-height": window.innerHeight
-        },
-        minHeight: 0,
-        duration: 300,
-        offset: 0,
-        easing: "easeInOutCubic",
-        links: [
-            {
-                label: "About",
-                url: "#about"
-            },
-            {
-                label: "Experience",
-                url: "#experience"
-            },
-            {
-                label: "Portfolio",
-                url: "#portfolio"
-            },
-            {
-                label: "Contact",
-                url: "#contact"
-            },
-            {
-                label: "Resume",
-                url: "#"
-            }
-        ]
+        window: {
+            width: 0,
+            height: 600
+        }
     }),
     created() {
-        this.minHeight = window.innerHeight;
+        window.addEventListener("resize", this.handleResize);
+        this.handleResize();
     },
-    computed: {
-        options() {
-            return {
-                duration: this.duration,
-                offset: this.offset,
-                easing: this.easing
-            };
+    destroyed() {
+        window.removeEventListener("resize", this.handleResize);
+    },
+    methods: {
+        handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
         }
     }
 };
 </script>
 
 <style>
+/* html {
+        background: rgba(0, 0, 0, 0);
+    } */
 </style>
